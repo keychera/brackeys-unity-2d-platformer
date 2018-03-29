@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
 	{
-		this.firePoint = transform.FindChild ("Fire Point");
+		this.firePoint = transform.Find ("Fire Point");
 		if (this.firePoint == null) {
 			Debug.LogError ("No Fire Point?  WHAT?!");
 		}
